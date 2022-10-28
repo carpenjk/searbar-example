@@ -1,15 +1,19 @@
 {
-  "name": "package-test",
+  "name": "searchbar-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@carpenjk/hooks": "git+https://git@github.com/carpenjk/hooks.git",
+    "@carpenjk/popup-modal": "github:carpenjk/popup-modal",
+    "@carpenjk/prop-x": "^2.0.2",
+    "@carpenjk/searchbar": "git+https://git@github.com/carpenjk/searchbar.git#major-open-close-rewrite",
+    "@carpenjk/themeweaver": "^1.0.2",
+    "formik": "^2.2.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "styled-components": "^5.1.1",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,8 +23,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -34,5 +37,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
