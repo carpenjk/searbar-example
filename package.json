@@ -4,9 +4,9 @@
   "private": true,
   "dependencies": {
     "@carpenjk/hooks": "git+https://git@github.com/carpenjk/hooks.git",
-    "@carpenjk/popup-modal": "git+https://git@github.com/carpenjk/popup-modal",
+    "@carpenjk/popup-modal": "git+https://git@github.com/carpenjk/popup-modal.git#v0.1.0",
     "@carpenjk/prop-x": "^2.0.2",
-    "@carpenjk/searchbar": "git+https://git@github.com/carpenjk/searchbar.git",
+    "@carpenjk/searchbar": "git+https://git@github.com/carpenjk/searchbar.git#v0.1.0",
     "@carpenjk/themeweaver": "^1.0.2",
     "formik": "^2.2.9",
     "react": "^17.0.2",
