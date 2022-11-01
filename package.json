@@ -6,7 +6,7 @@
     "@carpenjk/hooks": "git+https://git@github.com/carpenjk/hooks.git",
     "@carpenjk/popup-modal": "github:carpenjk/popup-modal",
     "@carpenjk/prop-x": "^2.0.2",
-    "@carpenjk/searchbar": "git+https://git@github.com/carpenjk/searchbar.git#major-open-close-rewrite",
+    "@carpenjk/searchbar": "git+https://git@github.com/carpenjk/searchbar.git",
     "@carpenjk/themeweaver": "^1.0.2",
     "formik": "^2.2.9",
     "react": "^17.0.2",

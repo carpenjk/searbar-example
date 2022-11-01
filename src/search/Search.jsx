@@ -8,7 +8,7 @@ import theme from '../theme';
 import Results from './Results';
 
 function Search({ data }) {
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState(data);
   const searchData = (values) => {
     setResults(data.filter((item) => {
       const searchFilter = values.search ? item.name.match(new RegExp(values.search)) : true;
@@ -38,7 +38,7 @@ function Search({ data }) {
         options={{
           // option values can vary by breakpoint
           alwaysShowButtons: [false, true], // default = true
-          useIsStartedState: true,
+          useIsStartedState: true, // default = false
           // additional options
           // openOnMount = false,
           // allOpenMode = false,

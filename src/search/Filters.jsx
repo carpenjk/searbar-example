@@ -86,7 +86,7 @@ function Filters(props) {
               value="blue"
               onFocus={onInputFocus}
             />
-            blue
+            <span>blue</span>
           </label>
           <label>
             <Field
@@ -96,7 +96,7 @@ function Filters(props) {
               value="black"
               onFocus={onInputFocus}
             />
-            black
+            <span>black</span>
           </label>
           <label>
             <Field
@@ -106,7 +106,7 @@ function Filters(props) {
               value="green"
               onFocus={onInputFocus}
             />
-            green
+            <span>green</span>
           </label>
           <label>
             <Field
@@ -116,7 +116,7 @@ function Filters(props) {
               value="red"
               onFocus={onInputFocus}
             />
-            red
+            <span>red</span>
           </label>
         </div>
       </div>

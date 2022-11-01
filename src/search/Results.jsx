@@ -3,7 +3,7 @@ import React from 'react';
 function Results({ results }) {
   return (
     <div className="results">
-      <h1>Results</h1>
+      <h1>Products</h1>
       <div className="results__columnNames">
         <h3>Name</h3>
         <h3>Size</h3>
