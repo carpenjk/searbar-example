@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@carpenjk/hooks": "^1.0.0",
+    "@carpenjk/hooks": "^1.0.1",
     "@carpenjk/prop-x": "^2.0.2",
     "@carpenjk/searchbar": "^1.0.4",
     "@carpenjk/themeweaver": "^1.0.2",
