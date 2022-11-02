@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@carpenjk/prop-x": "^2.0.2",
-    "@carpenjk/searchbar": "^1.0.5",
+    "@carpenjk/searchbar": "^1.0.7",
     "@carpenjk/themeweaver": "^1.0.2",
     "formik": "^2.2.9",
     "react": "^17.0.2",
