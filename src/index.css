@@ -122,6 +122,43 @@ select[name="size"] {
   margin: 300px auto 0px auto;
 }
 
+.results__params {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 0 32px 0;
+
+}
+
+.results__paramContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.results__paramHeader {
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 16px;
+  flex: none;
+  padding: 4px 0;
+}
+
+.results__param {
+  flex: none;
+  font-size: 12px;
+  padding: 4px 0;
+}
+
+.results__paramName {
+  margin-right: 4px;
+}
+
+.results__paramDivider {
+  font-size: 10px;
+  margin: 0 16px;
+}
+
 .results__columnNames {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

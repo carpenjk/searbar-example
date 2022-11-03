@@ -1,9 +1,39 @@
+import { useSearchBar } from '@carpenjk/searchbar';
 import React from 'react';
 
 function Results({ results }) {
+  const { searchState: { values } } = useSearchBar();
+  const selectedParams = Object.keys(values).filter((param) => values[param]);
+
+  function getParamValues(param) {
+    const pValues = values[param];
+    if (!Array.isArray(pValues)) {
+      return pValues;
+    }
+    return pValues.reduce((str, v) => `${str}, ${v}`);
+  }
+
   return (
     <div className="results">
       <h1>Products</h1>
+      <div className="results__params">
+        <span className="results__paramHeader">Search Params:</span>
+        <div className="results__paramContainer">
+          {selectedParams.map((param, i) => (
+            <span className="results__param" key={param}>
+              <span className="results__paramName">
+                {param}
+                :
+              </span>
+              <span className="results__paramValue">{getParamValues(param)}</span>
+              {i < selectedParams.length - 1 && (
+              <span className="results__paramDivider">|</span>
+              )}
+            </span>
+          ))}
+        </div>
+
+      </div>
       <div className="results__columnNames">
         <h3>Name</h3>
         <h3>Size</h3>
