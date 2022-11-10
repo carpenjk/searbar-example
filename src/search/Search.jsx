@@ -1,3 +1,4 @@
+import './search.css';
 import React, { useState } from 'react';
 import { SearchBarMenu, SearchBarProvider } from '@carpenjk/searchbar';
 import PrimarySearchFields from './PrimarySearchFields';
@@ -15,7 +16,9 @@ function Search({ data }) {
       const sizeFilter = values.size ? item.size === values.size : true;
       const minPriceFilter = values.minPrice ? item.price >= values.minPrice : true;
       const maxPriceFilter = values.maxPrice ? item.price <= values.maxPrice : true;
-      const colorsFilter = values.colors ? values.colors.includes(item.color) : true;
+      const colorsFilter = values.colors && values.colors.length > 0
+        ? values.colors.includes(item.color)
+        : true;
       return searchFilter && sizeFilter && minPriceFilter && maxPriceFilter && colorsFilter;
     }));
   };

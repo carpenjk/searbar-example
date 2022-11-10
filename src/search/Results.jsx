@@ -3,7 +3,9 @@ import React from 'react';
 
 function Results({ results }) {
   const { searchState: { values } } = useSearchBar();
-  const selectedParams = Object.keys(values).filter((param) => values[param]);
+  const selectedParams = Object.keys(values).filter((param) => values[param]
+    && values[param].length > 0);
+  console.log('🚀 ~ file: Results.jsx ~ line 8 ~ Results ~ selectedParams', selectedParams);
 
   function getParamValues(param) {
     const pValues = values[param];
@@ -27,7 +29,7 @@ function Results({ results }) {
               </span>
               <span className="results__paramValue">{getParamValues(param)}</span>
               {i < selectedParams.length - 1 && (
-              <span className="results__paramDivider">|</span>
+                <span className="results__paramDivider">|</span>
               )}
             </span>
           ))}
