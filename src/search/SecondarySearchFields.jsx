@@ -5,45 +5,47 @@ function SecondarySearchFields(props) {
   const {
     // options,
     onInputFocus,
-    // inputRefs,  optional additional properties
-    // searchBarRef, optional additional properties
-    // breakpoints,
-    // isOpen,
-    // setIsOpen,
-    // isHidden,
-    // setIsHidden,
-    // isPrimaryOpen,
-    // setIsPrimaryOpen,
-    // isSecondaryOpen,
-    // setIsSecondaryOpen,
-    // isFiltersOpen,
-    // setIsFiltersOpen,
-    // setIsStarted,
-    // isStarted,
-    isFieldsWrapped,
-    // isSearchBarFocused,
-    // setIsSearchBarFocused,
-    // currentInputElement,
-    // isSecondaryWidth,
-    // setCurrentInputElement,
-    // values,
-    // onExit: handleExit,
-    // breakpointToWrap,
+    // inputRefs, // optional additional properties
+    // searchBarRef, // optional additional properties
+    searchState: {
+      // breakpoints,
+      // isOpen,
+      // setIsOpen,
+      // isHidden,
+      // setIsHidden,
+      // isPrimaryOpen,
+      // setIsPrimaryOpen,
+      // isSecondaryOpen,
+      // setIsSecondaryOpen,
+      // isFiltersOpen,
+      // setIsFiltersOpen,
+      // setIsStarted,
+      // isStarted,
+      isFieldsWrapped,
+      // isSearchBarFocused,
+      // setIsSearchBarFocused,
+      // currentInputElement,
+      // isSecondaryWidth,
+      // setCurrentInputElement,
+      // values,
+      // onExit: handleExit,
+      // breakpointToWrap,
+    },
+    // options: {
+    //   allOpenMode, // all options are passed with corresponding breakpoint value
+    //   brAllOpenMode
+    //   openOnMount,
+    //   brOpenOnMount,
+    //   hideOnMount,
+    //   brHideOnMount,
+    //   secondaryOpenBreakpoint,
+    //   hideOnSearch,
+    //   brHideOnSearch
+    //   useIsStartedState
+    //   brUseIsStartedState
+    // }
   } = props;
 
-  // const {
-  // allOpenMode, // all options are passed with corresponding breakpoint value
-  // brAllOpenMode
-  // openOnMount,
-  // brOpenOnMount,
-  // hideOnMount,
-  // brHideOnMount,
-  // secondaryOpenBreakpoint,
-  // hideOnSearch,
-  // brHideOnSearch
-  // useIsStartedState
-  // brUseIsStartedState
-  // } = options;
   const labelClass = isFieldsWrapped ? 'isWrapped' : '';
   return (
     <label className={labelClass}>

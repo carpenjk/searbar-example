@@ -5,7 +5,6 @@ function Results({ results }) {
   const { searchState: { values } } = useSearchBar();
   const selectedParams = Object.keys(values).filter((param) => values[param]
     && values[param].length > 0);
-  console.log('🚀 ~ file: Results.jsx ~ line 8 ~ Results ~ selectedParams', selectedParams);
 
   function getParamValues(param) {
     const pValues = values[param];
